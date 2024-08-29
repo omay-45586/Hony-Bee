@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffbee;
+            text-align: center;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+        }
+        header h1 {
+            color: #8b4513;
+        }
+        section {
+            margin: 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .product {
+            border: 2px solid #8b4513;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            background-color: #fff5d7;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: #ffcc00;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>اهلا بكم في موقعA&M</h1>
+</header>
+
+<section>
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product">
+            <img src="honey1.jpg" alt="Honey Jar 1">
+            <h3>Pure Honey</h3>
+            <p>Price: 130</p>
+        </div>
+        <div class="product">
+            <img src="honey2.jpg" alt="Honey Jar 2">
+            <h3>Organic Honey</h3>
+            <p>Price: 65</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Contact us: honey@shop.com | 01068414397<!DOCTYPE html>
+
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #fffbee;
+        }
+        #bee {
+            position: absolute;
+            width: 100px;
+            height: auto;
+            top: 50%;
+            left: 0;
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+<img id="bee" src="bee.png" alt="Flying Bee">
+
+<script>
+    let bee = document.getElementById("bee");
+    let position = 0;
+    let direction = 1; // 1 for right, -1 for left
+    let speed = 2; // Speed of movement
+
+    function moveBee() {
+        position += speed * direction;
+        if (position > window.innerWidth - bee.offsetWidth || position < 0) {
+            direction *= -1; // Reverse direction when it hits the edges
+            bee.style.transform = scaleX(${direction}); // Flip bee when changing direction
+        }
+        bee.style.left = position + "px";
+        requestAnimationFrame(moveBee);
+    }
+
+    moveBee();
+</script>
+
+</body>
+</html></p>
+</footer>
+
+</body>
+</html>
